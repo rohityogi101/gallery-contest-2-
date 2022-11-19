@@ -1,0 +1,67 @@
+<!------------------------GALLERY-------------------------->
+ 
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  .grid-container {
+  box-sizing: border-box;
+  display: grid;
+  gap: 20px;
+  padding: 10px;
+  grid-auto-rows: 250px;
+  /* grid-auto-columns: 150px; */
+  grid-template-columns: repeat(4,1fr);
+  max-height: fit-content;
+  } 
+.grid-container >img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* grid-row: 1  / span 2; */
+.item1 {
+grid-column: span 2;
+
+}
+
+/* grid-row: 1 / span 2; */
+.item2 {
+grid-row: span 2 ;
+
+}
+
+/* grid-row:2; */
+.item6 {
+grid-column:span 2;
+
+}
+
+/* grid-row:2 ; */
+.item7 {
+grid-column:span 2;
+
+}
+
+
+    </style>
+</head>
+<body>
+<h1>  Gallary </h1>
+<div class="grid-container">
+  <img class="item1 item2" src="pexels-ali-ramazan-çiftçi-14140100.jpg" alt="">
+  <img  src="pexels-diego-benjamín-13806105.jpg" alt="">
+  <img  src="pexels-kate-11172946.jpg" alt="">
+  <img  src="pexels-kris-møklebust-14082768.jpg" alt="">
+  <img  src="pexels-yana-moroz-14239995.jpg" alt="">
+  <img class="item6" src="pexels-polina-chistyakova-13876757.jpg" alt="">
+  <img class="item7" src="pexels-céline-10066931.jpg" alt="" height="325px">
+</div>
+</body>
+</html>
